@@ -1,0 +1,11 @@
+<div class="booyah-box col-10 offset-1">
+  <h1>Name three things that make you happy:</h1>
+  <%= simple_form_for @thing do |f| %>
+    <%= f.input :name %>
+    <%= f.input :thing1 %>
+    <%= f.input :thing2 %>
+    <%= f.input :thing3 %>
+    <br />
+    <%= f.submit 'Create', class: 'btn btn-primary' %>
+  <% end %>
+</div>
